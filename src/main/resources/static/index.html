@@ -1,0 +1,77 @@
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="element-ui/lib/theme-default/index.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 先引入 Vue -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+<div id="app">
+    <el-row>
+        <el-col :span="12"><div class="grid-content bg-purple">
+            <el-button type="primary" @click="open()">新增</el-button>
+        </div></el-col>
+        <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
+    </el-row>
+    <el-row>
+        <el-col :span="24">
+            <div class="grid-content bg-purple-dark">
+                <div id="">
+                    <template>
+                        <el-table
+                                :data="tableData"
+                                style="width: 100%">
+                            <el-table-column
+                                    prop="name"
+                                    label="姓名"
+                                    width="180">
+                            </el-table-column>
+                            <el-table-column
+                                    prop="sex"
+                                    label="性别"
+                                    width="180">
+                            </el-table-column>
+                            <el-table-column
+                                    prop="teacher"
+                                    label="指导老师">
+                            </el-table-column>
+                        </el-table>
+                    </template>
+                </div>
+            </div>
+        </el-col>
+    </el-row>
+
+    <el-dialog
+    title="提示"
+    :visible.sync="dialogVisible"
+    size="tiny">
+        <div style="margin: 20px;"></div>
+        <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
+            <el-form-item label="姓名">
+                <el-input v-model="formLabelAlign.name"></el-input>
+            </el-form-item>
+            <el-form-item label="性别">
+                <template>
+                    <el-radio class="radio" v-model="formLabelAlign.sex" label="1">男</el-radio>
+                    <el-radio class="radio" v-model="formLabelAlign.sex" label="2">女</el-radio>
+                </template>
+            </el-form-item>
+            <el-form-item label="指导老师">
+                <el-input v-model="formLabelAlign.teacher"></el-input>
+            </el-form-item>
+        </el-form>
+    <span slot="footer" class="dialog-footer">
+    <el-button @click="dialogVisible = false">取 消</el-button>
+    <el-button type="primary" @click="createStu()">确 定</el-button>
+    </span>
+    </el-dialog>
+</div>
+
+
+</body>
+<script src="app.js"></script>
