@@ -22,7 +22,7 @@ new Vue({
             var self=this;
             $.ajax({
                 type: "get",
-                url: 'http://localhost:8080/student/add',
+                url: 'http://192.168.0.224:8080/student/add',
                 dataType: "json",
                 data: self.formLabelAlign,
                 success: function (data) {
@@ -48,7 +48,7 @@ new Vue({
             var self=this;
             $.ajax({
                 type: "get",
-                url: 'http://localhost:8080/student/getAll',
+                url: 'http://192.168.0.224:8080/student/getAll',
                 dataType: "json",
                 success: function (data) {
                     for(var i=0;i<data.length;i++){
