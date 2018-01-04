@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * 监测数据表配置表 controller
@@ -21,13 +22,7 @@ public class ReciverController {
     private ReciverSerivce reciverSerivce;
 
     @RequestMapping("/verify")
-    @ResponseBody
-    public Object verify(HttpServletRequest request) {
-        try {
-
-            return reciverSerivce.verify(request);
-        } catch (Exception e) {
-            return "error";
-        }
+    public String saas(HttpServletRequest request) throws Exception{
+        return "redirect:http://"+reciverSerivce.getCode(request);
     }
 }
