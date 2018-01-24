@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.InputStream;
 
 /**
  * 监测数据表配置表 controller
@@ -22,7 +23,9 @@ public class ReciverController {
     private ReciverSerivce reciverSerivce;
 
     @RequestMapping("/verify")
+    @ResponseBody
     public String saas(HttpServletRequest request) throws Exception{
-        return "redirect:http://"+reciverSerivce.getCode(request);
+        InputStream in=request.getInputStream();
+        return reciverSerivce.verify(request);
     }
 }

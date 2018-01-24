@@ -1,4 +1,4 @@
-package com.yang.reciver;
+package com.yang.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -8,7 +8,7 @@ import java.security.NoSuchAlgorithmException;
  */
 public class SignUtil {
     // 与接口配置信息中的Token要一致
-    private static String token = "wwwcescitcom";
+    private static String token = "cescit";
 
 
     public static boolean checkSignature(String signature, String timestamp,

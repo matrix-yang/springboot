@@ -1,7 +1,7 @@
 package com.yang.reciver.service;
 
 
-import com.yang.reciver.SignUtil;
+import com.yang.util.SignUtil;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,13 +18,11 @@ public class ReciverSerivce {
         // 随机字符串
         String echostr = request.getParameter("echostr");
 
-        String code = request.getParameter("code");
-
         boolean staus= SignUtil.checkSignature(signature,timestamp,nonce);
         System.out.println("验证结果--------------->"+staus);
         if (staus){
-            return code;
+            return echostr;
         }
-        return code;
+        return "";
     }
 }
