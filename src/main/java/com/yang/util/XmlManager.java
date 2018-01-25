@@ -23,7 +23,7 @@ public class XmlManager {
             System.out.println("接收的结果" + document.asXML());
             Element users = document.getRootElement();
             Field[] declaredFields = classType.getDeclaredFields();
-            List<String> list = new ArrayList<String>();
+            List<String> list = new ArrayList<>();
             for (Field field : declaredFields)
                 list.add(field.getName());
             for (Iterator i = users.elementIterator(); i.hasNext(); ) {

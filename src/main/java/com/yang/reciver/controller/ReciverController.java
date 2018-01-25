@@ -37,24 +37,6 @@ public class ReciverController {
     }
 
     public String dealMessage(HttpServletRequest request){
-        System.out.println("==============================");
-        Map<String, String[]> map = request.getParameterMap();
-        for(String key:map.keySet())
-            System.out.println("key:"+key+";value:"+map.get(key)[0]);
-        String resulet="";
-        try {
-            ServletInputStream inputStream = request.getInputStream();
-            BaseMessage baseMessage=(BaseMessage) XmlManager.parserXml(inputStream, BaseMessage.class);
-            inputStream.close();
-            String toUserName = baseMessage.getToUserName();
-            String fromUserName = baseMessage.getFromUserName();
-            baseMessage.setToUserName(fromUserName);
-            baseMessage.setFromUserName(toUserName);
-            resulet = XmlManager.buildXml(baseMessage);
-            System.out.println("---------------->"+resulet);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return resulet;
+        return reciverSerivce.autoReply(request);
     }
 }
