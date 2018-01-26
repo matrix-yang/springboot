@@ -38,12 +38,30 @@ public class ReciverSerivce {
     public String autoReply(HttpServletRequest request){
         BaseMessage baseMessage=reciveMsg(request);
         String content=baseMessage.getContent();
-        if (content!=null&&content.equals("在线监测")){
+        if (content!=null&&content.equals("1")){
             String result=replyMsg(baseMessage,"在线监测地址为：\nhttp://wap.ewateryun.com/ewater-mobile/");
             return result;
         }
-        String result=replyMsg(baseMessage,"");
-        return result;
+        if (content!=null&&content.equals("2")){
+            String result=replyMsg(baseMessage,"此处应该调用其他服务器接口开始查询，然后返回结果");
+            return result;
+        }
+        if (content!=null&&content.equals("3")){
+            String result=replyMsg(baseMessage,"刚拿到驾照，从公司到家熄了五次火，最后一次，怎么也启动不了车了，正着急呢，看见一位大爷怒冲冲的拍我的车窗，然后耐心的教我启车！\n" +
+                    "在大爷的耐心指导下，终于把车启动了，正准备跟他道谢呢，只见他跑车前，捂着腿躺地上叫着，哎哟，腿断了，你赔。。。");
+            return result;
+        }
+        if (baseMessage.getEvent()!=null&&baseMessage.getEventKey().equals("SELFSERVIVE")){
+            String result=replyMsg(baseMessage,"回复以下数字进入菜单：\n" + "1.在线监测\n2.查询违章车辆\n3.讲个笑话");
+            return result;
+        }else if (baseMessage.getEvent()!=null&&baseMessage.getEventKey().equals("SOMEJOKE")){
+            String result=replyMsg(baseMessage,"刚拿到驾照，从公司到家熄了五次火，最后一次，怎么也启动不了车了，正着急呢，看见一位大爷怒冲冲的拍我的车窗，然后耐心的教我启车！\n" +
+                    "在大爷的耐心指导下，终于把车启动了，正准备跟他道谢呢，只见他跑车前，捂着腿躺地上叫着，哎哟，腿断了，你赔。。。");
+            return result;
+        }else {
+            String result=replyMsg(baseMessage,"回复以下数字进入菜单：\n" + "1.在线监测\n2.查询违章车辆\n3.讲个笑话");
+            return result;
+        }
     }
 
     /**
@@ -75,7 +93,10 @@ public class ReciverSerivce {
         String fromUserName = baseMessage.getFromUserName();
         baseMessage.setToUserName(fromUserName);
         baseMessage.setFromUserName(toUserName);
-        if (content!=null&&content.equals("")){
+        if (!baseMessage.getMsgType().equals("image")){
+            baseMessage.setMsgType("text");
+        }
+        if (content!=null&&!content.equals("")){
             baseMessage.setContent(content);
         }
         resulet = XmlManager.buildXml(baseMessage);
