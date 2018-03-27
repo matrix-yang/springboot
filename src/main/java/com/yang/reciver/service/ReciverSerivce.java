@@ -140,7 +140,7 @@ public class ReciverSerivce {
         String drain = this.currentDrainageRange.get(Integer.parseInt(drainId));
         this.currentProjectName = searchProject.getProjectName(drain);
         //System.out.println(TableUtil.buildMenuFromList("回复以下编号查询项目","p",this.currentProjectName));
-        String r = replyMsg(baseMessage, TableUtil.buildMenuFromList("回复以下编号查询项目", "P", this.currentProjectName));
+        String r = replyMsg(baseMessage, TableUtil.buildMenuFromList("回复以下编号查询项目", "p", this.currentProjectName));
         return r;
     }
 
