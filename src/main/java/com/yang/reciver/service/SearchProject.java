@@ -4,11 +4,11 @@ import com.yang.reciver.model.Project;
 import com.yang.util.HttpClientUtil;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@Component
 public class SearchProject {
     //获得道路上的流域
     public List<String> getDrainageRange(String road){
