@@ -1,13 +1,23 @@
 package com.yang.reciver.model;
 
+import com.yang.reciver.annotation.CName;
+
 public class Project {
+    @CName("完成时间")
     private String finishTime;
+    @CName("流域名称")
     private String drainageRangeName;
+    @CName("内涝点")
     private String wlPoint;
+    @CName("投资估算")
     private String invEstimate;
+    @CName("备注")
     private String memo;
+    @CName("责任单位")
     private String respOrganization;
+    @CName("序号")
     private int id;
+    @CName("治理措施")
     private String measurement;
 
     public String getFinishTime() {
