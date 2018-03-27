@@ -1,8 +1,6 @@
 package com.yang.reciver.model;
 
-/**
- * Created by Administrator on 2018/1/24.
- */
+
 public class BaseMessage {
     private String  toUserName;
     private String  fromUserName;
