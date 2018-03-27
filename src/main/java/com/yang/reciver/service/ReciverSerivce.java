@@ -20,7 +20,8 @@ public class ReciverSerivce {
     private List<String> currentDrainageRange;
     private List<String> currentProjectName;
 
-    private SearchProject searchProject = new SearchProject();
+    @Autowired
+    private SearchProject searchProject;
 
     public String verify(HttpServletRequest request) {
         // 微信加密签名
