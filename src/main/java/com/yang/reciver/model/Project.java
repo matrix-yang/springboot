@@ -16,7 +16,7 @@ public class Project {
     @CName("责任单位")
     private String respOrganization;
     @CName("序号")
-    private int id;
+    private String id;
     @CName("治理措施")
     private String measurement;
 
@@ -68,19 +68,19 @@ public class Project {
         this.respOrganization = respOrganization;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getMeasurement() {
         return measurement;
     }
 
     public void setMeasurement(String measurement) {
         this.measurement = measurement;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

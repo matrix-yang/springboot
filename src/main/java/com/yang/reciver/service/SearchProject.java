@@ -1,20 +1,10 @@
 package com.yang.reciver.service;
 
-
-import com.yang.reciver.model.BaseMessage;
 import com.yang.reciver.model.Project;
 import com.yang.util.HttpClientUtil;
-import com.yang.util.SignUtil;
-import com.yang.util.XmlManager;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import netscape.javascript.JSObject;
 import org.springframework.stereotype.Service;
-
-import javax.servlet.ServletInputStream;
-import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 

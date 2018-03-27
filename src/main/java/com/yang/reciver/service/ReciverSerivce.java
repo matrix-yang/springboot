@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.ServletInputStream;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
@@ -126,7 +127,7 @@ public class ReciverSerivce {
     public String dealSearchRoad(String rex,BaseMessage baseMessage){
         String road=rex.substring(1);
         this.currentDrainageRange =searchProject.getDrainageRange(road);
-        System.out.println(TableUtil.buildMenuFromList("回复以下编号查询流域","d",this.currentDrainageRange));
+        //System.out.println(TableUtil.buildMenuFromList("回复以下编号查询流域","d",this.currentDrainageRange));
         String r=replyMsg(baseMessage,TableUtil.buildMenuFromList("回复以下编号查询流域","d",this.currentDrainageRange));
         return r;
     }
@@ -134,8 +135,9 @@ public class ReciverSerivce {
     public String dealSearchDrain(String rex,BaseMessage baseMessage){
         String drainId=rex.substring(1);
         String drain=this.currentDrainageRange.get(Integer.parseInt(drainId));
-        List<String> list =searchProject.getProjectName(drain);
-        String r=replyMsg(baseMessage,TableUtil.buildMenuFromList("回复以下编号查询项目","P",list));
+        this.currentProjectName =searchProject.getProjectName(drain);
+        //System.out.println(TableUtil.buildMenuFromList("回复以下编号查询项目","p",this.currentProjectName));
+        String r=replyMsg(baseMessage,TableUtil.buildMenuFromList("回复以下编号查询项目","P",this.currentProjectName));
         return r;
     }
 
@@ -145,7 +147,7 @@ public class ReciverSerivce {
         Project project =searchProject.getProjectInfo(pName);
         String r="";
         try {
-            System.out.println(TableUtil.buildMenuFromBean("查询结果为：",project));
+            //System.out.println(TableUtil.buildMenuFromBean("查询结果为：",project));
             r=replyMsg(baseMessage,TableUtil.buildMenuFromBean("查询结果为：",project));
         }catch (Exception e){
             e.printStackTrace();

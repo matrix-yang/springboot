@@ -31,7 +31,7 @@ public class TableUtil {
             // 获取属性的类型
             String type = field[x].getGenericType().toString();
             // 如果type是类类型，则前面包含"class "，后面跟类名
-            System.out.println("属性为：" + name);
+            //System.out.println("属性为：" + name+"的类型是"+type);
             Method m = project.getClass().getMethod("get" + name);
             // 调用getter方法获取属性值
             String value = (String) m.invoke(project);
