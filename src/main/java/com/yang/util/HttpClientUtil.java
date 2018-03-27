@@ -58,7 +58,7 @@ public class HttpClientUtil {
         String adr=url.substring(0,url.indexOf("=")+1);
         String param=url.substring(url.indexOf("=")+1);
         try {
-            String urlNameString =adr+URLEncoder.encode(param);
+            String urlNameString =adr+URLEncoder.encode(param,"utf-8");
             URL realUrl = new URL(urlNameString);
             // 打开和URL之间的连接
             URLConnection connection = realUrl.openConnection();
