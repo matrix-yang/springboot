@@ -11,6 +11,8 @@ public class Project {
     private String respOrganization;
     @CName("流域名称")
     private String drainageRangeName;
+    @CName("治理措施")
+    private String measurement;
     @CName("投资估算")
     private String invEstimate;
     @CName("完成时间")
@@ -18,9 +20,6 @@ public class Project {
     @CName("备注")
     private String memo;
 
-
-    @CName("治理措施")
-    private String measurement;
 
     public String getFinishTime() {
         return finishTime;
