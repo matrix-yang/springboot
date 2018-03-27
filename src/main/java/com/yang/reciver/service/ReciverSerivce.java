@@ -50,11 +50,11 @@ public class ReciverSerivce {
         BaseMessage baseMessage = reciveMsg(request);
         String content = baseMessage.getContent();
         //监听输入的命令
-        if (content.indexOf(0) == 's') {
+        if (content.substring(0,1).equals("s")) {
             return dealSearchRoad(content, baseMessage);
-        } else if (content.indexOf(0) == 'd') {
+        } else if (content.substring(0,1).equals("d")) {
             return dealSearchDrain(content, baseMessage);
-        } else if (content.indexOf(0) == 'p') {
+        } else if (content.substring(0,1).equals("p")) {
             return dealSearchProject(content, baseMessage);
         } else {
             //监听输入的菜单
