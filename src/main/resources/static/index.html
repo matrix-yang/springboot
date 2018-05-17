@@ -1,385 +1,332 @@
-<!doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-gb" class="no-js">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->
 <title>Home</title>
-<meta name="description" content="">
-<meta name="author" content="">
-<!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<!--[if lte IE 8]>
-		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
-	<![endif]-->
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<link href="css/animate.css" rel="stylesheet" media="screen">
-<link href="flexslider/flexslider.css" rel="stylesheet" />
-<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css" />
-<!-- Font Awesome -->
-<link href="font/css/font-awesome.min.css" rel="stylesheet">
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Your Trip Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
 </head>
-
+	
 <body>
-<header class="header">
-  <div class="container">
-    <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i>Soulmate</i></b></a> </div>
-      <!--/.navbar-header-->
-      <div id="main-nav" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav" id="mainNav">
-          <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
-          <li><a href="#services" class="scroll-link">Events</a></li>
-          <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-          <li><a href="#work" class="scroll-link">Gallery</a></li> 
-          <li><a href="#team" class="scroll-link">Family</a></li>
-          <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
-        </ul>
-      </div>
-      <!--/.navbar-collapse--> 
-    </nav>
-    <!--/.navbar--> 
-  </div>
-  <!--/.container--> 
-</header>
-<!--/.header-->
-<div id="#top"></div>
-<section id="home">
-  <div class="banner-container"> 
-  <!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="images/slides/1.jpg" alt="" />
-                <div class="flex-caption container">
-                     <h3>lv & yang</h3>
-					<p><strong>Are Getting Married</strong></p> 
-					<p>26 Dec 2025</p>
-					 
-                </div>
-              </li>
-              <li>
-                <img src="images/slides/2.jpg" alt="" />
-                <div class="flex-caption container">
-                     <h3>David & Kristean</h3>
-					<p><strong>Are Getting Married</strong></p> 
-					<p>26 Dec 2017</p>
-					 
-                </div>
-              </li> 
-            </ul>
-        </div>
-	<!-- end slider -->
-  </div> 
-</section>
-<section id="services">
-    <div class="container">
-      <div class="heading wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Events</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-          </div>
-        </div> 
-      </div>
-      <div class="text-center our-services">
-        <div class="row">
-          <div class="col-sm-4 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; -webkit-animation-duration: 1000ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
-            <div class="service-icon">
-              <i class="fa fa-heart"></i>
-            </div>
-            <div class="service-info">
-              <h3>Engagement</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="450ms" style="visibility: visible; animation-duration: 1000ms; -webkit-animation-duration: 1000ms; animation-delay: 450ms; -webkit-animation-delay: 450ms; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
-            <div class="service-icon">
-              <i class="fa fa-music"></i>
-            </div>
-            <div class="service-info">
-              <h3>Wedding Day</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInDown animated" data-wow-duration="1000ms" data-wow-delay="550ms" style="visibility: visible; animation-duration: 1000ms; -webkit-animation-duration: 1000ms; animation-delay: 550ms; -webkit-animation-delay: 550ms; animation-name: fadeInDown; -webkit-animation-name: fadeInDown;">
-            <div class="service-icon">
-              <i class="fa fa-cloud"></i>
-            </div>
-            <div class="service-info">
-              <h3>Reception</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="650ms" style="visibility: visible; animation-duration: 1000ms; -webkit-animation-duration: 1000ms; animation-delay: 650ms; -webkit-animation-delay: 650ms; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
-            <div class="service-icon">
-              <i class="fa fa-coffee"></i>
-            </div>
-            <div class="service-info">
-              <h3>Photography</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="750ms" style="visibility: visible; animation-duration: 1000ms; -webkit-animation-duration: 1000ms; animation-delay: 750ms; -webkit-animation-delay: 750ms; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
-            <div class="service-icon">
-              <i class="fa fa-bitbucket"></i>
-            </div>
-            <div class="service-info">
-              <h3>Party</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="850ms" style="visibility: visible; animation-duration: 1000ms; -webkit-animation-duration: 1000ms; animation-delay: 850ms; -webkit-animation-delay: 850ms; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
-            <div class="service-icon">
-              <i class="fa fa-gift"></i>
-            </div>
-            <div class="service-info">
-              <h3>Family Dinner</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<section id="aboutUs">
-  <div class="container"> 
-	    <div class="heading wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-          </div>
-        </div> 
-      </div>
-    <div class="row feature design"> 
-	  <div class="col-md-4"> 
-        <h3>Bride</h3>
-        <p>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat fabulas complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-          Nec et jority have suffered alteration. </p> 
-		  </div>
-		  <div class="col-md-4">
-		  <img src="images/feature-img-1.png" alt="" width="100%"> 
-		  </div>
-		  <div class="col-md-4">
-		  <h3>Groom</h3>
-        <p>Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-          Nec et amet vidisse mentitumsstie percipitoleat fabulas. </p> 
-      </div> 
-    </div>
-	
-    </div>
-	
-</section> 
-<section id="work" class="page-section page">
-  <div class="container text-center">   
-	 <div class="heading wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Our Gallery</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-          </div>
-        </div> 
-      </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="portfolio"> 
-          <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight" style="position: relative; height: 438px;">
-            <li class="item branding" style="position: absolute; left: 0px; top: 0px;"> <a href="images/work/1.jpg" class="fancybox"> <img src="images/work/1.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-            <li class="item photography" style="position: absolute; left: 292px; top: 0px;"> <a href="images/work/2.jpg" class="fancybox"> <img src="images/work/2.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-            <li class="item branding" style="position: absolute; left: 585px; top: 0px;"> <a href="images/work/3.jpg" class="fancybox"> <img src="images/work/3.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-            <li class="item photography" style="position: absolute; left: 877px; top: 0px;"> <a href="images/work/4.jpg" class="fancybox"> <img src="images/work/4.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-            <li class="item photography" style="position: absolute; left: 0px; top: 219px;"> <a href="images/work/5.jpg" class="fancybox"> <img src="images/work/5.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-            <li class="item web" style="position: absolute; left: 292px; top: 219px;"> <a href="images/work/6.jpg" class="fancybox"> <img src="images/work/6.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-            <li class="item photography" style="position: absolute; left: 585px; top: 219px;"> <a href="images/work/7.jpg" class="fancybox"> <img src="images/work/7.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-            <li class="item web" style="position: absolute; left: 877px; top: 219px;"> <a href="images/work/8.jpg" class="fancybox"> <img src="images/work/8.jpg" alt="">
-              <div class="overlay"> <span><i class="fa fa-search"></i></span> </div>
-              </a> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> 
-<section id="team" class="page-section">
-  <div class="container"> 
-	 <div class="heading wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Family Members</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-          </div>
-        </div> 
-      </div>
-    <!-- Team Member's Details -->
-    <div class="team-content">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
-          <!-- Team Member -->
-          <div class="team-member pDark"> 
-            <!-- Image Hover Block -->
-            <div class="member-img"> 
-              <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-1.jpg" alt=""> </div>
-            <!-- Member Details -->
-            <h4>John Doe</h4>
-            <!-- Designation --> 
-            <span class="pos">Family Member</span> </div>
-          </div> 
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
-          <!-- Team Member -->
-          <div class="team-member pDark"> 
-            <!-- Image Hover Block -->
-            <div class="member-img"> 
-              <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-2.jpg" alt=""> </div>
-            <!-- Member Details -->
-            <h4>Larry Doe</h4>
-            <!-- Designation --> 
-            <span class="pos">Family Member</span> </div>
-          </div> 
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
-          <!-- Team Member -->
-          <div class="team-member pDark"> 
-            <!-- Image Hover Block -->
-            <div class="member-img"> 
-              <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-3.jpg" alt=""> </div>
-            <!-- Member Details -->
-            <h4>Ranith Kays</h4>
-            <!-- Designation --> 
-            <span class="pos">Family Member</span> </div>
-          </div> 
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
-          <!-- Team Member -->
-          <div class="team-member pDark"> 
-            <!-- Image Hover Block -->
-            <div class="member-img"> 
-              <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-4.jpg" alt=""> </div>
-            <!-- Member Details -->
-            <h4>Joan Ray</h4>
-            <!-- Designation --> 
-            <span class="pos">Family Member</span> </div>
-          </div> 
-      </div>
-    </div>
-  </div>
-  <!--/.container--> 
-</section>
-<section id="contactUs" class="contact-parlex">
-  <div class="parlex-back">
-    <div class="container">     
-		 <div class="heading wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Our Address</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-          </div>
-        </div> 
-      </div> 	  
-      <div class="row mrgn30">
-	    <div class="col-md-3">
-            	<div class="col clr-white">
-                   <h4>Contact us</h4>
-                   <ul>
-                        <li>1th Avenue, New York - United States</li>
-                        <li>Phone: +22 342 2345 345 | Fax: +22 724 2342 343 </li>
-                        <li>Email: <a href="mailto:info@example.com" title="Email Us">info@example.com</a></li>
-                        <li>Skype: <a href="skype:my.test?call" title="Skype us">my-company</a></li>
-                    </ul>
-                 </div>
-            </div>
-	   <div class="col-md-9">
-	   	<!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
-		<form name="sentMessage" id="contactForm"  novalidate> 
-		<div class="control-group">
-		<div class="controls">
-		<input type="text" class="form-control" 
-		placeholder="Full Name" id="name" required
-		data-validation-required-message="Please enter your name" />
-		<p class="help-block"></p>
-		</div>
-		</div> 	
-		<div class="control-group">
-		<div class="controls">
-		<input type="email" class="form-control" placeholder="Email" 
-		id="email" required
-		data-validation-required-message="Please enter your email" />
-		</div>
-		</div> 	
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="banner_top">
+				<div class="banner_top_left">
+					<p>I am travelling to <span>Alaska Mountains.</span></p>
+				</div>
+				<div class="banner_top_right">
+					<form>
+						<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}" required="">
+						<i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
 
-		<div class="control-group">
-		<div class="controls">
-		<textarea rows="10" cols="100" class="form-control" 
-		placeholder="Message" id="message" required
-		data-validation-required-message="Please enter your message" minlength="5" 
-		data-validation-minlength-message="Min 5 characters" 
-		maxlength="999" style="resize:none"></textarea>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav cl-effect-14">
+						<li><a href="index.html" class="active">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="features.html">Features</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="codes.html">Pages</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="#contact" class="scroll">Contact Us</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->	
+				
+			</nav>
+			<div class="logo">
+				<a href="index.html">Your Trip<span>Alaska Mountains</span></a>
+			</div>
+			<div class="dummy_text">
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+					adipisci velit, sed quia non numquam eius modi.</p>
+			</div>
+			<div class="social_icons">
+				<ul>
+					<li><a href="#" class="p"></a></li>
+					<li><a href="#" class="facebook"></a></li>
+					<li><a href="#" class="g"></a></li>
+					<li><a href="#" class="instagram"></a></li>
+				</ul>
+			</div>
 		</div>
-		</div> 		 
-		<div id="success"> </div> <!-- For success/fail messages -->
-		<button type="submit" class="btn btn-primary pull-right">Send</button><br />
-		</form>
-
-	   
-	   </div>
-      </div>
-    </div>
-    <!--/.container--> 
-  </div>
-</section> 
-<!--/.page-section-->
-<section class="copyright">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center">Copyright &copy; 2016.Company yang All rights reserved<a href="http://www.miibeian.gov.cn/" target="_blank" title="模板之家">粤ICP备18050130号-1</a> </div>
-    </div>
-    <!-- / .row --> 
-  </div>
-</section>
-<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
-
-<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]--> 
-<script src="js/modernizr-latest.js"></script> 
-<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> 
-<script src="js/bootstrap.min.js" type="text/javascript"></script> 
-<script src="js/jquery.isotope.min.js" type="text/javascript"></script> 
-<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script src="js/jquery.nav.js" type="text/javascript"></script> 
-<script src="js/jquery.fittext.js"></script> 
-<script src="js/waypoints.js"></script> 
-<script src="flexslider/jquery.flexslider.js"></script>
- <script src="contact/jqBootstrapValidation.js"></script>
- <script src="contact/contact_me.js"></script>
-<script src="js/custom.js" type="text/javascript"></script> 
-<script src="js/owl-carousel/owl.carousel.js"></script>
+	</div>
+<!-- //banner -->
+<!-- banner-bottom-position -->
+	<div class="banner-bottom-position">
+		<div class="col-md-6 banner-bottom-position-grid">
+			<div class="banner-bottom-position-grid-left">
+				<img src="images/3.jpg" alt=" " class="img-responsive" />
+				<div class="banner-bottom-position-grid-left-pos">
+					<h4>Voluptates repudiandae sint</h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 banner-bottom-position-gridr">
+			<h3>01.</h3>
+			<p>To take a trivial example, which of us ever undertakes laborious physical 
+				exercise, except to obtain some advantage from it? But who has any right to 
+				find fault with a man who chooses to enjoy a pleasure.</p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //banner-bottom-position -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="banner-bottom-grids">
+				<div class="col-md-4 banner-bottom-grid">
+					<img src="images/1.jpg" alt=" " class="img-responsive" />
+					<div class="social_icons social_icons_sub">
+						<ul>
+							<li><a href="#" class="p"></a></li>
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="g"></a></li>
+						</ul>
+						<p>Voluptates repudiandae sint et 
+							molestiae non recusandae.</p>
+					</div>
+					<div class="banner-bottom-grid1">
+						<h3>Mountains In Alaska</h3>
+						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum 
+							necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
+							molestiae non recusandae.</p>
+					</div>
+				</div>
+				<div class="col-md-4 banner-bottom-grid">
+					<div class="banner-bottom-grid1 banner-bottom-grid1-sub">
+						<h3>Salmon Fish In Alaska</h3>
+						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum 
+							necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
+							molestiae non recusandae.</p>
+					</div>
+					<img src="images/2.jpg" alt=" " class="img-responsive" />
+					<div class="social_icons social_icons_sub1">
+						<ul>
+							<li><a href="#" class="p"></a></li>
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="g"></a></li>
+						</ul>
+						<p>Voluptates repudiandae sint et 
+							molestiae non recusandae.</p>
+					</div>
+				</div>
+				<div class="col-md-4 banner-bottom-grid">
+					<div class="banner-bottom-grid-box">
+						<div class="banner-bottom-grid-box1">
+							<h1>dolorem eum fugiat quo</h1>
+							<p>Neque porro quisquam est, qui dolorem ipsum quia.</p>
+						</div>
+					</div>
+					<div class="banner-bottom-grid-box banner-bottom-grid-boxs">
+						<div class="banner-bottom-grid-box1">
+							<h2>dolorem eum fugiat quo</h2>
+							<p>Neque porro quisquam est, qui dolorem ipsum quia qui dolorem eum 
+								fugiat quo voluptas nulla pariatu.</p>
+						</div>
+					</div>
+					<div class="banner-bottom-grid-box banner-bottom-grid-boxs1">
+						<div class="banner-bottom-grid-box1 banner-bottom-grid-box1-sub">
+							<h2>porro quisquam est fugiat quo ipsum quia</h2>
+							<p>Neque porro quisquam est, qui dolorem ipsum quia.</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- banner-bottom1 -->
+	<div class="banner-bottom1">
+		<div class="container">	
+			<div class="banner-bottom1-grids">
+				<div class="col-md-8 banner-bottom1-grid-left">
+					<h3>vel illum qui dolorem eum fugiat quo voluptas nulla</h3>
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+						esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat 
+						quo voluptas nulla pariatur</p>
+				</div>
+				<div class="col-md-4 banner-bottom1-grid-right">
+					<div class="more">
+						<a class="btn effect6" href="single.html">Learn More</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom1 -->
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+<!-- slider -->
+	<div class="slider">
+		<div class="container">
+			<div class="sliderfig">
+				<ul id="flexiselDemo1">			
+					<li>
+						<div class="sliderfig-grids">
+							<div class="sliderfig-grid">
+								<img src="images/5.jpg" alt=" " class="img-responsive" />
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="sliderfig-grids">
+							<div class="sliderfig-grid">
+								<img src="images/6.jpg" alt=" " class="img-responsive" />
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="sliderfig-grids">
+							<div class="sliderfig-grid">
+								<img src="images/8.jpg" alt=" " class="img-responsive" />
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="sliderfig-grids">
+							<div class="sliderfig-grid">
+								<img src="images/7.jpg" alt=" " class="img-responsive" />
+							</div>
+						</div>
+					</li>
+					</ul>
+					<script type="text/javascript">
+									$(window).load(function() {
+										$("#flexiselDemo1").flexisel({
+											visibleItems: 4,
+											animationSpeed: 1000,
+											autoPlay: true,
+											autoPlaySpeed: 3000,    		
+											pauseOnHover: true,
+											enableResponsiveBreakpoints: true,
+											responsiveBreakpoints: { 
+												portrait: { 
+													changePoint:480,
+													visibleItems: 1
+												}, 
+												landscape: { 
+													changePoint:640,
+													visibleItems:3
+												},
+												tablet: { 
+													changePoint:768,
+													visibleItems: 3
+												}
+											}
+										});
+										
+									});
+							</script>
+							<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			</div>
+		</div>
+	</div>
+<!-- //slider -->
+<!-- banner-bottom-position -->
+	<div class="banner-bottom-position">
+		<div class="col-md-7 banner-bottom-position-gridr right">
+			<h3>02.</h3>
+			<p>To take a trivial example, which of us ever undertakes laborious physical 
+				exercise, except to obtain some advantage from it? But who has any right to 
+				find fault with a man who chooses to enjoy a pleasure.</p>
+		</div>
+		<div class="col-md-5 banner-bottom-position-grid">
+			<div class="banner-bottom-position-grid-left Voluptates">
+				<img src="images/4.jpg" alt=" " class="img-responsive" />
+				<div class="banner-bottom-position-grid-left-pos repudiandae">
+					<h4>Voluptates repudiandae sint</h4>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //banner-bottom-position -->
+<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+			<h3>Contact Us</h3>
+			<div class="col-md-4 contact-grid">
+				<i class="glyphicon glyphicon-home" aria-hidden="true"></i>
+				<h4>Address</h4>
+				<p>JI.Paulnadwam 2nd D.No:23-50-903.<span>United States</span></p>
+			</div>
+			<div class="col-md-4 contact-grid">
+				<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+				<h4>Mail</h4>
+				<a href="mailto:info@example.com">info@example.com</a>
+			</div>
+			<div class="col-md-4 contact-grid">
+				<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+				<h4>Phone</h4>
+				<p>+020 456 9696</p>
+			</div>
+			<div class="clearfix"> </div>
+			<!-- footer -->
+			<div class="footer-copy">
+				<p>Copyright &copy; 2016.Company yang All rights reserved<a href="http://www.miibeian.gov.cn/" target="_blank" title="模板之家">粤ICP备18050130号-1</a></p>
+			</div>
+		</div>
+	</div>
+<!-- //contact -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
 </body>
 </html>
