@@ -1,7 +1,7 @@
-package com.yang.reciver.service;
+package com.yang.biz.service;
 
 
-import com.yang.reciver.SignUtil;
+import com.yang.biz.SignUtil;
 import com.yang.util.web.HttpClientUtil;
 import net.sf.json.JSONObject;
 import org.springframework.stereotype.Service;

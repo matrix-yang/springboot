@@ -1,14 +1,12 @@
-package com.yang.reciver.controller;
+package com.yang.biz.controller;
 
-import com.yang.reciver.service.ReciverSerivce;
+import com.yang.biz.service.ReciverSerivce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * 监测数据表配置表 controller

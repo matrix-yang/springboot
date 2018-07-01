@@ -1,4 +1,4 @@
-package com.yang.reciver;
+package com.yang.biz;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
